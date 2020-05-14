@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
   <!-- include head.html -->
-  <title>HTML Boilerplate</title>
+<title>HTML Boilerplate</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
 <!-- favicon -->
 <link href="images/favicon.ico" type="image/x-icon" rel="icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- meta social -->
 <meta name="twitter:card" content="" />
 <meta name="twitter:site" content="" />
@@ -20,7 +21,7 @@
 <meta property="og:url" content="" />
 <!-- Google Font -->
   <!-- include styles.html -->
-  <!-- build:css(.) style/vendor.min.css -->
+<!-- build:css(.) style/vendor.min.css -->
 <link rel="stylesheet" type="text/css" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.css" />
 <!-- endbuild -->
 <!-- build:css(.tmp) style/style.min.css -->
@@ -28,53 +29,39 @@
 <!-- endbuild -->
 </head>
 <body>
-  <div class="wrapper">
     <!-- include header.html -->
-    <header class="header-container">
+<header class="header-container">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p>Header Container</p>
+    <nav class="header-menu">
+      <div>
+        <a href="#"><img src="images/logo.png" alt="logo"></a>
       </div>
-    </div>
+      <div class="menu-main">
+        <ul class="list-menu">
+          <li class="menu-item"><a class="menu-link" href="home">home</a></li>
+          <li class="menu-item"><a class="menu-link" href="home">about</a></li>
+          <li class="menu-item"><a class="menu-link"  href="home">skills</a></li>
+          <li class="menu-item"><a class="menu-link"  href="home">service</a></li>
+          <li class="menu-item"><a class="menu-link"  href="home">work</a></li>
+          <li class="menu-item"><a class="menu-link"  href="home">testimonial</a></li>
+          <li class="menu-item"><a class="menu-link"  href="home">blog</a></li>
+          <li class="menu-item"><a class="menu-link"  href="home">team</a></li>
+          <li class="menu-item"><a class="menu-link" href="home">contact</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="btn-open-menu"></a>
+      </div>
+      <div class="menu-main">
+        <a href=""><i class="fa fa-search icon-search"></i></a>
+      </div>
+    </nav>
   </div>
 </header>
 
     <!-- include banner.html -->
-    <section class="banner-container">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p class="title-block">Banner</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <main class="main-container">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h4 class="title-block">HTML Boilerplate</h4>
-          </div>
-        </div>
-      </div>
-    </main>
-
     <!-- include footer.html -->
-    <footer class="footer-container">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p>Footer Container</p>
-      </div>
-    </div>
-  </div>
-</footer>
-  </div>
 
   <!-- include scripts.html -->
-  <!-- build:js(.) script/vendor.min.js -->
+<!-- build:js(.) script/vendor.min.js -->
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 <!-- endbuild -->
