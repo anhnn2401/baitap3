@@ -1,0 +1,39 @@
+.nav-work {
+  @include flexbox();
+  margin: 0 auto;
+  .nav-item {
+    border: 1px solid #000;
+    padding: 25px;
+    font-size: 14px;
+    color: #717171;
+    &:hover {
+      color: #18cfab;
+      border-top: 2px solid #18cfab;
+    }
+  }
+}
+.work {
+  .filter-container {
+    @include flexbox();
+    @include justify-content(space-between);
+    margin: 50px auto;
+  }
+  .filtr-item {
+    width: calc(100% / 4 - 20px) !important;
+    .image-work {
+      width: 100%;
+    }
+  }
+}
+.row {
+  .btn {
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #18cfab;
+    .fa-plus {
+      margin-right: 5px;
+    }
+  }
+}
