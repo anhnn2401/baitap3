@@ -1,0 +1,164 @@
+.about-company {
+  width: 100%;
+  font-family: Montserrat;
+  background-color: #1c2a33;
+  .col-lg-6 {
+    .image-company {
+      width: 100%;
+      margin-top: 180px;
+    }
+  }
+}
+.nav-tabs {
+  text-transform: uppercase;
+  background-color: transparent;
+  border-bottom: none;
+  margin-top: 65px;
+  .nav-link {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    padding: 10px 0;
+    margin-right: 20px;
+    &:hover {
+    background-color: transparent;
+    color: #18cfab;
+    border-top: 1px solid #18cfab !important;
+    }
+  }
+  .nav-link.active {
+    color: #18cfab;
+    background-color: transparent;
+    border-color: #18cfab transparent transparent;
+    border-radius: 0;
+  }
+}
+.tab-content {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  .progress {
+    margin: 10px 0;
+    position: relative;
+    width: 80%;
+    padding: 10px 20px;
+    height: auto;
+    z-index: 1;
+    border-radius: 5px;
+    &:before {
+      content: '';
+      background-color: #aaa;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 20px;
+      border-radius: 5px;
+      z-index: -1;
+    }
+  }
+  .interface-history {
+    &:before {
+      content: '';
+      background-color: #9c5da5;
+      width: 60%;
+    }
+  }
+  .web-design-history {
+    &:before {
+      content: '';
+      background-color: #11b0de;
+      width: 50%;
+    }
+  }
+  .wordpress-history {
+    &:before {
+      content: '';
+      background-color: #d67f7f;
+      width: 60%;
+    }
+  }
+  .html-history {
+    &:before {
+      content: '';
+      background-color: #20bc9d;
+      width: 50%;
+    }
+  }
+  .app-design-history {
+    &:before {
+      content: '';
+      background-color: #bb8a36;
+      width: 65%;
+    }
+  }
+  .interface-biog {
+    &:before {
+      content: '';
+      background-color: #9c5da5;
+      width: 66%;
+    }
+  }
+  .web-design-biog {
+    &:before {
+      content: '';
+      background-color: #11b0de;
+      width: 78%;
+    }
+  }
+  .wordpress-biog {
+    &:before {
+      content: '';
+      background-color: #d67f7f;
+      width: 21%;
+    }
+  }
+  .html-biog {
+    &:before {
+      content: '';
+      background-color: #20bc9d;
+      width: 55%;
+    }
+  }
+    .app-design-biog {
+    &:before {
+      content: '';
+      background-color: #bb8a36;
+      width: 99%;
+    }
+  }
+    .interface-skill {
+    &:before {
+      content: '';
+      background-color: #9c5da5;
+      width: 57%;
+    }
+  }
+  .web-design-skill {
+    &:before {
+      content: '';
+      background-color: #11b0de;
+      width: 64%;
+    }
+  }
+  .wordpress-skill {
+    &:before {
+      content: '';
+      background-color: #d67f7f;
+      width: 64%;
+    }
+  }
+  .html-skill {
+    &:before {
+      content: '';
+      background-color: #20bc9d;
+      width: 75%;
+    }
+  }
+    .app-design-skill {
+    &:before {
+      content: '';
+      background-color: #bb8a36;
+      width: 89%;
+    }
+  }
+}
