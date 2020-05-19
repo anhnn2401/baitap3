@@ -1,0 +1,74 @@
+.fun-fact {
+  margin-top: 100px;
+  .row {
+    .option {
+      padding-bottom: 50px;
+      &:nth-last-of-type(odd) {
+        padding: 0;
+        .title-option {
+          color: #25333c;
+        }
+      }
+      .number-fun {
+        color: #fff;
+      }
+      .image-option {
+        padding-top: 60px;
+        padding-bottom: 25px;
+      }
+      .title-option {
+        margin-top: 25px;
+      }
+    }
+  }
+  .price {
+    .container {
+      .block-price {
+        background-color: #f8fcfe;
+        box-shadow: 0 0 1px 1px;
+        padding: 0;
+        border-radius: 5px;
+        &:hover {
+          box-shadow: 0 0 2px 2px #000;
+        }
+        .title-price {
+          font-size: 24px;
+          font-weight: 700;
+          color: #717171;
+          text-align: center;
+          text-transform: uppercase;
+          padding-top: 25px;
+          padding-bottom: 15px;
+        }
+        .price {
+          background-color: #2e4a5b;
+          font-size: 40px;
+          color: #fff;
+          text-align: center;
+          padding: 20px 0;
+          .price-month {
+            font-size: 14px;
+          }
+        }
+        .list-price {
+          font-size: 14px;
+          text-align: center;
+          .item-price {
+            padding: 20px 0 15px 0;
+            box-shadow: 0 0 0 1px;
+          }
+        }
+        .d-flex {
+          .link-buy {
+            text-transform: uppercase;
+            color: #fff;
+            background-color: #2e4a5b;
+            padding: 20px 50px;
+            margin: 20px 0 20px 0;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}
