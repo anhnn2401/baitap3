@@ -15,7 +15,4 @@ $('.slider-nav').slick({
   prevArrow: '<i class="fa fa-angle-left"></i>',
   nextArrow: '<i class="fa fa-angle-right"></i>'
 });
-$(window).on('load', () => {
-  console.log($('.filter'))
-});
 $('.filter-container').filterizr();
