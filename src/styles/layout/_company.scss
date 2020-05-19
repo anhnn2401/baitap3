@@ -31,16 +31,18 @@
     color: #fff;
     padding: 10px 0;
     margin-right: 20px;
+    border: none;
     &:hover {
       background-color: transparent;
       color: #18cfab;
       border-top: 1px solid #18cfab !important;
+      border-radius: unset;
     }
   }
   .nav-link.active {
     color: #18cfab;
     background-color: transparent;
-    border-color: #18cfab transparent transparent;
+    border-top: 1px solid #18cfab ;
     border-radius: 0;
   }
 }
