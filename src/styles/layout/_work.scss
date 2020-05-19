@@ -2,13 +2,26 @@
   @include flexbox();
   margin: 0 auto;
   .nav-item {
-    border: 1px solid #000;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     padding: 25px;
     font-size: 14px;
     color: #717171;
-    &:hover {
-      color: #18cfab;
+    position: relative;
+    &:before {
+      content: '';
+      width: 100%;
+      position: absolute;
       border-top: 2px solid #18cfab;
+      top: 0;
+      left: 0;
+      visibility: hidden;
+    }
+    &:hover,
+    &:active {
+      color: #18cfab;
+      &:before {
+        visibility: visible;
+      }
     }
   }
 }
