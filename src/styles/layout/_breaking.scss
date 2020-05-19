@@ -1,0 +1,51 @@
+.breaking-new {
+  .row {
+    .col-sm-3 {
+      .content-breaking {
+        position: relative;
+        &:hover,
+        &:active {
+          .date {
+            background-color: #18cfab;
+          }
+          & ~ .title-desc {
+            .title-post {
+              color: #18cfab;
+            }
+          }
+        }
+        .image {
+          width: 100%;
+        }
+        .date {
+          position: absolute;
+          top: 0;
+          right: 0;
+          background-color: #203e38;
+          color: #fff;
+          padding: 2px 10px;
+          font-size: 14px;
+        }
+      }
+      .title-desc {
+        background-color: #f8fcfe;
+        border: 1px solid #f8fcfe;
+        text-align: center;
+        .title-post {
+          font-size: 18px;
+          font-weight: 700;
+          color: #717171;
+        }
+        .desc-post {
+          text-align: center;
+          font-size: 14px;
+          @include flexbox;
+          @include justify-content(space-around);
+          .desc-link {
+            color: #717171;
+          }
+        }
+      }
+    }
+  }
+}
