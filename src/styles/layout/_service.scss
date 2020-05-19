@@ -46,6 +46,7 @@
       .active {
         @include flexbox();
         align-items: center;
+        color: #777777;
         .img-service {
           width: 200px;
           height: 140px;
