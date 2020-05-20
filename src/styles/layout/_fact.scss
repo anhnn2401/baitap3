@@ -22,7 +22,6 @@
     }
   }
   .price {
-    margin-bottom: 50px;
     .container {
       .block-price {
         background-color: #f8fcfe;
@@ -31,6 +30,7 @@
         border-radius: 5px;
         position: relative;
         overflow: hidden;
+        margin-bottom: 50px;
         &:nth-last-of-type(2) {
           .offer {
             visibility: visible;

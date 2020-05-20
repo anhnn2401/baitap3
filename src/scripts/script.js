@@ -29,8 +29,6 @@ $('.feedback-nav').slick({
   infinite: true,
   asNavFor: '.feedback-slide',
   arrows: true,
-  focusOnSelect: true,
-  adaptiveHeight: false,
   centerMode: true,
   centerPadding: '70px',
   prevArrow: '<i class="fa fa-angle-left"></i>',
