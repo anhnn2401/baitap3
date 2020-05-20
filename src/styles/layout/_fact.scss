@@ -60,7 +60,7 @@
           right: -15%;
           width: 50%;
           background-color: #2e4a5b;
-          transform: rotateZ(45deg);
+          @include transform(rotateZ(45deg));
           color: #fff;
           text-align: center;
           text-transform: uppercase;
