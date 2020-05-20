@@ -16,3 +16,23 @@ $('.slider-nav').slick({
   nextArrow: '<i class="fa fa-angle-right"></i>'
 });
 $('.filter-container').filterizr();
+$('.feedback-slide').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.feedback-nav'
+});
+$('.feedback-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  infinite: true,
+  asNavFor: '.feedback-slide',
+  arrows: true,
+  focusOnSelect: true,
+  adaptiveHeight: false,
+  centerMode: true,
+  centerPadding: '70px',
+  prevArrow: '<i class="fa fa-angle-left"></i>',
+  nextArrow: '<i class="fa fa-angle-right"></i>'
+});
