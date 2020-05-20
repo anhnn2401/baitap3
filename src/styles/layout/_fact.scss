@@ -25,7 +25,7 @@
     .container {
       .block-price {
         background-color: #f8fcfe;
-        box-shadow: 0 0 1px 1px;
+        border: 1px solid #e3e3e3;
         padding: 0;
         border-radius: 5px;
         position: relative;
@@ -36,7 +36,7 @@
           }
         }
         &:hover {
-          box-shadow: 0 0 2px 2px #000;
+          box-shadow: 0 0 9px 0 #c7c7c7;
           z-index: 1;
           .offer {
             background-color: #18cfab;
@@ -89,10 +89,11 @@
           text-align: center;
           .item-price {
             padding: 10px 0;
-            box-shadow: 0 0 0 1px;
+            border-top: 1px solid #e3e3e3;
           }
         }
         .d-flex {
+          border-top: 1px solid #e3e3e3;
           .link-buy {
             text-transform: uppercase;
             color: #fff;
