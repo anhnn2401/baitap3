@@ -1,0 +1,109 @@
+.fun-fact {
+  margin-top: 100px;
+  .row {
+    .option {
+      padding-bottom: 50px;
+      &:nth-last-of-type(odd) {
+        padding: 0;
+        .title-option {
+          color: #25333c;
+        }
+      }
+      .number-fun {
+        color: #fff;
+      }
+      .image-option {
+        padding-top: 60px;
+        padding-bottom: 25px;
+      }
+      .title-option {
+        margin-top: 25px;
+      }
+    }
+  }
+  .price {
+    .container {
+      .block-price {
+        background-color: #f8fcfe;
+        border: 1px solid #e3e3e3;
+        padding: 0;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+        &:nth-last-of-type(2) {
+          .offer {
+            visibility: visible;
+          }
+        }
+        &:hover {
+          box-shadow: 0 0 9px 0 #c7c7c7;
+          z-index: 1;
+          .offer {
+            background-color: #18cfab;
+          }
+          .title-price {
+            color: #18cfab;
+          }
+          .price {
+            background-color: #18cfab;
+          }
+          .d-flex {
+            .link-buy {
+              background-color: #18cfab;
+            }
+          }
+        }
+        .offer {
+          visibility: hidden;
+          position: absolute;
+          top: 2%;
+          right: -15%;
+          width: 50%;
+          background-color: #2e4a5b;
+          @include transform(rotateZ(45deg));
+          color: #fff;
+          text-align: center;
+          text-transform: uppercase;
+        }
+        .title-price {
+          font-size: 24px;
+          font-weight: 700;
+          color: #717171;
+          text-align: center;
+          text-transform: uppercase;
+          padding-top: 25px;
+          padding-bottom: 15px;
+        }
+        .price {
+          background-color: #2e4a5b;
+          font-size: 40px;
+          color: #fff;
+          text-align: center;
+          padding: 20px 0;
+          .price-month {
+            font-size: 14px;
+          }
+        }
+        .list-price {
+          font-size: 14px;
+          text-align: center;
+          .item-price {
+            padding: 10px 0;
+            border-top: 1px solid #e3e3e3;
+          }
+        }
+        .d-flex {
+          border-top: 1px solid #e3e3e3;
+          .link-buy {
+            text-transform: uppercase;
+            color: #fff;
+            background-color: #2e4a5b;
+            padding: 10px 40px;
+            margin: 15px 0;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}
