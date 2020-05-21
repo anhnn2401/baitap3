@@ -1,0 +1,127 @@
+.footer-container {
+  background-color: #1c2b33;
+  overflow: auto;
+  color: #b2b2b2;
+  font-size: 14px;
+}
+.footer-top {
+  margin-top: 3rem;
+  .logo {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    width: 80%;
+  }
+  .title-footer {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .about {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    .title-about {
+      font-size: 1.3rem;
+      color: #c0c0c0;
+    }
+  }
+  .recent {
+    @include flexbox();
+    @include align-items(center);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #294453;
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+      margin-bottom: 3rem;
+    }
+    &:hover {
+      .wrap-recent {
+        .title-recent {
+          color: #18cfab;
+        }
+      }
+    }
+    .wrap-recent {
+      margin-left: 1rem;
+      .title-recent {
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 700;
+      }
+      .desc-recent {
+        margin: .5rem 0;
+      }
+      .date-recent {
+        color: #f1f1f1;
+        font-size: 1rem;
+        font-weight: 700;
+      }
+    }
+  }
+  .block-tags {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e3e3e3;
+    margin-top: 1rem;
+    .tags {
+      margin-bottom: 1rem;
+      .tags-link {
+        border: 1px solid #e3e3e3;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
+        color: #b8b8b8;
+        &:hover {
+          background-color: #18cfab;
+          color: #fff;
+          border-color: #18cfab;
+        }
+      }
+    }
+  }
+  .col-md-3 {
+    .form-footer {
+      margin-top: 1rem;
+      input[type=text] {
+        background-color: #22353f;
+        font-size: 1rem;
+        width: 80%;
+        border: 1px solid #22353f;
+        padding: 0.5rem;
+      }
+      input[type=submit] {
+        background-color: #294453;
+        font-size: 1rem;
+        width: 18%;
+        border: 1px solid #22353f;
+        padding: 0.5rem;
+        color: #fff;
+        text-transform: uppercase;
+        &:hover {
+          color: #18cfab;
+        }
+      }
+    }
+  }
+  .col-md-2 {
+    padding: 0;
+    .image-flicke {
+      margin: 5px;
+    }
+  }
+}
+.footer-bot {
+  background-color: #22353f;
+  border: 1px solid #fff;
+  .footer-content {
+    font-size: 1rem;
+    line-height: 5;
+    text-align: center;
+    .text-logo {
+      color: #18cfab;
+    }
+  }
+}
