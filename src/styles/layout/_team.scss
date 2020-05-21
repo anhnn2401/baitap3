@@ -4,7 +4,7 @@
       position: relative;
       @include flexbox;
       @include justify-content(center);
-      align-items: center;
+      @include align-items(center);
       background-color: #b5b5b5;
       &:hover {
         .team-plus {
