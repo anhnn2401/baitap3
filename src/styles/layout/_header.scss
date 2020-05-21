@@ -4,101 +4,40 @@
   background-color: rgba(73,71,63,0.6);
   position: fixed;
   z-index: 1;
-  .header-menu {
-    @include flexbox();
-    @include justify-content(space-between);
-    margin: 20px auto;
-    position: relative;
-    .menu-main {
-      line-height: 4.2;
-      @include breakpoint(991) {
-        line-height: 2;
-      }
-      .list-menu {
-        @include breakpoint(991) {
-          display: none;
-        }
-        .menu-item {
-          display: inline-block;
-          margin-left: 15px;
-          font-weight: 700;
+  .navbar {
+    padding: 0;
+    .navbar-collapse {
+      .navbar-nav {
+        .nav-link {
+          color: #fff;
           text-transform: uppercase;
-          @include breakpoint(991) {
-            display: block;
-          }
-          .menu-link {
-            color: #fff;
-            font-size: 13px;
-            padding: 46px 0;
-            @include breakpoint(991) {
-              padding: 0;
-            }
-            &:hover,
-            &:active {
-              color: #18cfab;
-              border-bottom: 2px solid #18cfab;
-            }
+          font-weight: 700;
+          font-size: 15px;
+          border-bottom: 3px solid transparent;
+          padding: 30px 10px;
+          &:hover,
+          &:active {
+            color: #18cfab;
+            border-color: #18cfab;
           }
         }
       }
-      .icon-search {
-        color: #b8b8b8;
-        @include breakpoint(992) {
-          position: absolute;
-          top: 40%;
+    }
+    .show {
+      .navbar-nav {
+        .nav-link {
+          padding: 5px;
+          text-align: center;
         }
       }
     }
   }
-}
-.list-menu ~ .btn-open-menu {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  width: 25px;
-  height: 3px;
-  top: 50%;
-  right: 10px;
-  @include breakpoint(991) {
-    display: block;
-  }
-  &:before {
-    content: '';
-    background-color: #fff;
-    width: 25px;
-    height: 3px;
-    position: absolute;
-    top: -8px;
-  }
-  &:after {
-    content: '';
-    background-color: #fff;
-    width: 25px;
-    height: 3px;
-    position: absolute;
-    top: 8px;
-  }
-}
-.open {
-  display: block !important;
-  height: 100%;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #212529;
-  position: fixed;
-  text-align: center;
-}
-.list-menu.open ~ .btn-open-menu {
-  background-color: transparent;
-  &:before {
-    @include transform(rotate(45deg));
-    top: 0;
-    @include transition(all 0.25s);
-  }
-  &:after {
-    top: 0;
-    @include transform(rotate(-45deg));
-    @include transition(all 0.25s);
+  .my-2 {
+    .btn {
+      color: #b8b8b8;
+    }
+    .form-control {
+      display: none;
+    }
   }
 }
