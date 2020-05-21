@@ -34,3 +34,4 @@ $('.feedback-nav').slick({
   prevArrow: '<i class="fa fa-angle-left"></i>',
   nextArrow: '<i class="fa fa-angle-right"></i>'
 });
+ new WOW().init();
