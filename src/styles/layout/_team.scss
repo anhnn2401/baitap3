@@ -1,0 +1,82 @@
+.team-container {
+  .col-sm-3 {
+    .image-team {
+      position: relative;
+      @include flexbox;
+      @include justify-content(center);
+      @include align-items(center);
+      background-color: #b5b5b5;
+      &:hover {
+        .team-plus {
+          height: 100%;
+        }
+      }
+      .item-team {
+        width: 100%;
+      }
+      .team-plus {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #008cba;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        @include transition(all 0.5s);
+      }
+    }
+    .fa-plus {
+      font-size: 45px;
+      color: #18cfab;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      @include transform(translate(-50%, -50%));
+      &:before {
+        padding: 30px 35px;
+        border-radius: 100%;
+        border: 1px solid #fff;
+        background-color: #fff;
+      }
+      &:after {
+        content: '';
+        background-color: transparent;
+        border: 1px solid #18cfab;
+        border-radius: 100%;
+        width: 115%;
+        height: 270%;
+        position: absolute;
+        left: -8%;
+        top: -85%;
+      }
+    }
+    .name-team {
+      background-color: #18cfab;
+      padding: 20px;
+      .name-user {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .position-name {
+        color: #2e4a5b;
+        font-size: 13px;
+      }
+    }
+    .icon {
+      @include flexbox();
+      @include justify-content(space-around);
+      .icon-team {
+        @include flexbox();
+        @include justify-content(center);
+        font-size: 30px;
+        background-color: #18cfab;
+        width: 100%;
+        padding: 15px;
+        color: #fff;
+        border: 1px solid #fff;
+      }
+    }
+  }
+}
