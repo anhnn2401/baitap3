@@ -2,6 +2,7 @@
   width: 100%;
   background-color: #1c2a33;
   overflow: auto;
+  margin: 20px 0;
   .title-purchase {
     text-align: center;
     color: #18cfab;
@@ -42,6 +43,42 @@
       background-color: #18cfab;
       &:after {
         background-color: #18cfab;
+      }
+    }
+  }
+  .title-purchase-2 {
+    text-align: center;
+    .title-purchase {
+      color: #fff;
+      font-size: 51px;
+      margin-bottom: 0;
+    }
+    .description-purchase {
+      color: #18cfab;
+      font-size: 47px;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+    }
+  }
+  .row {
+    .col-sm-6 {
+      .list-option {
+        font-size: 14px;
+        color: #fff;
+        margin-bottom: 10px;
+        .fa-check-circle {
+          color: #18cfab;
+          margin-right: 20px;
+        }
+      }
+      .image-purchase {
+        margin-bottom: 40px;
+        width: 100%;
+      }
+      .btn {
+        float: left;
+        font-weight: 700;
+        margin-top: 40px;
       }
     }
   }
