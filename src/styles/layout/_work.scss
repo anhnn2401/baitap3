@@ -7,7 +7,8 @@
     font-size: 14px;
     color: #717171;
     position: relative;
-    &:before {
+    border-top: 2px solid transparent;
+/*     &:before {
       content: '';
       width: 100%;
       position: absolute;
@@ -15,12 +16,13 @@
       top: 0;
       left: 0;
       visibility: hidden;
-    }
+    } */
     &:hover,
     &:active {
       color: #18cfab;
+      border-color: #18cfab;
       &:before {
-        visibility: visible;
+/*         visibility: visible; */
       }
     }
   }

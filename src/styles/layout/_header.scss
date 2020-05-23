@@ -7,19 +7,31 @@
   .navbar {
     padding: 0;
     .navbar-collapse {
+      .nav-pills {
+        .nav-item {
+          .nav-link {
+            border-bottom: 3px solid transparent;
+            border-radius: 0;
+            &:hover,
+            &:active {
+              border-color: #18cfab;
+              color: #18cfab;
+            }
+          }
+          .active {
+            background-color: transparent;
+            border-bottom: 3px solid #18cfab;
+            color: #18cfab;
+          }
+        }
+      }
       .navbar-nav {
         .nav-link {
           color: #fff;
           text-transform: uppercase;
           font-weight: 700;
           font-size: 15px;
-          border-bottom: 3px solid transparent;
           padding: 30px 10px;
-          &:hover,
-          &:active {
-            color: #18cfab;
-            border-color: #18cfab;
-          }
         }
       }
     }
@@ -39,5 +51,11 @@
     .form-control {
       display: none;
     }
+    .open-search {
+      display: block;
+    }
   }
+}
+body {
+  position: relative;
 }
