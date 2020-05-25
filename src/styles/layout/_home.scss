@@ -1,5 +1,14 @@
 .btn-home {
   margin-bottom: 240px;
+  @include breakpoint(1200) {
+    margin-bottom: 50px;
+  }
+  @include breakpoint(575) {
+    margin-bottom: 30px;
+  }
+  @include breakpoint(480) {
+    margin-bottom: 10px;
+  }
   .btn-lg {
     background-color: #00cbf6;
     color: #fff;
@@ -10,6 +19,16 @@
     margin-right: 30px;
     border-top: 5px solid #fff;
     font-weight: 700;
+    @include breakpoint(991) {
+      padding: 15px 25px;
+    }
+    @include breakpoint(767) {
+      margin-right: 15px;
+    }
+    @include breakpoint(480) {
+      padding: 10px;
+      font-size: 8px;
+    }
     &:hover {
       background-color: #18cfab;
     }
@@ -26,6 +45,31 @@
     position: absolute;
     bottom: 215px;
     right: 100px;
+    @include breakpoint(1200) {
+      top: 65%;
+    }
+    @include breakpoint(991) {
+      right: 3%;
+      top: 55%;
+    }
+    @include breakpoint(767) {
+      top: 34%;
+      right: 0;
+      .fa-angle-left {
+        padding: 0 15px !important;
+        left: 50px !important;
+      }
+      .fa-angle-right {
+        padding: 0 15px !important;
+        right: 20px !important;
+      }
+      .slick-track {
+        opacity: 0 !important;
+      }
+    }
+    @include breakpoint(575) {
+      visibility: hidden;
+    }
     .fa-angle-left {
       position: absolute;
       background-color: #3c4140;
@@ -66,6 +110,18 @@
         font-size: 35px;
         text-transform: uppercase;
         margin-top: 170px;
+        @include breakpoint(991) {
+          font-size: 30px;
+          margin-top: 90px;
+        }
+        @include breakpoint(575) {
+          font-size: 25px;
+          margin-top: 70px;
+        }
+        @include breakpoint(480) {
+          margin-top: 45px;
+          font-size: 16px;
+        }
         .descrip-home {
           color: #18cfab;
         }
@@ -74,11 +130,28 @@
         font-weight: 700;
         font-size: 79px;
         text-transform: uppercase;
+        @include breakpoint(991) {
+          font-size: 40px;
+        }
+        @include breakpoint(575) {
+          font-size: 20px;
+        }
       }
       .descrip-slide {
         font-size: 34px;
         color: #d4d4d4;
         margin-bottom: 100px;
+        @include breakpoint(991) {
+          font-size: 30px;
+          margin-bottom: 90px;
+        }
+        @include breakpoint(767) {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+        @include breakpoint(480) {
+          font-size: 13px;
+        }
       }
     }
   }

@@ -1,0 +1,67 @@
+.header-container {
+  width: 100%;
+  font-family: Montserrat;
+  background-color: rgba(73,71,63,0.6);
+  position: fixed;
+  z-index: 99;
+  .navbar {
+    padding: 0;
+    .logo {
+      width: 100%;
+      @include breakpoint(480) {
+        width: 50%;
+      }
+    }
+    .navbar-collapse {
+      .nav-pills {
+        .nav-item {
+          .nav-link {
+            border-bottom: 3px solid transparent;
+            border-radius: 0;
+            &:hover,
+            &:active {
+              border-color: #18cfab;
+              color: #18cfab;
+            }
+          }
+          .active {
+            background-color: transparent;
+            border-bottom: 3px solid #18cfab;
+            color: #18cfab;
+          }
+        }
+      }
+      .navbar-nav {
+        .nav-link {
+          color: #fff;
+          text-transform: uppercase;
+          font-weight: 700;
+          font-size: 15px;
+          padding: 30px 10px;
+        }
+      }
+      .close-menu {
+        display: none;
+      }
+    }
+    .show {
+      .navbar-nav {
+        .nav-link {
+          padding: 5px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .my-2 {
+    .btn {
+      color: #b8b8b8;
+    }
+    .form-control {
+      display: none;
+    }
+    .open-search {
+      display: block;
+    }
+  }
+}

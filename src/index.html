@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- include head.html -->
-  <title>HTML Boilerplate</title>
+<title>HTML Boilerplate</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
@@ -20,8 +20,10 @@
 <meta property="og:type" content="">
 <meta property="og:url" content="" />
 <!-- Google Font -->
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
   <!-- include styles.html -->
-  <!-- build:css(.) style/vendor.min.css -->
+<!-- build:css(.) style/vendor.min.css -->
 <link rel="stylesheet" type="text/css" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" media="screen" href="node_modules/slick-carousel/slick/slick.css" />
 <link rel="stylesheet" type="text/css" media="screen" href="node_modules/slick-carousel/slick/slick-theme.css" />
@@ -34,15 +36,53 @@
 <body>
 
     <!-- include header.html -->
-    <header class="header-container">
+<header class="header-container">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p>Header Container</p>
-      </div>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a href="#"><img src="images/logo.png" alt="logo" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto nav-pills" id="topmenu">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonial">testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">contact</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn my-2 my-sm-0" type="submit"><i class="fa fa-search icon-search"></i></button>
+          </form>
+        </div>
+      </nav>
   </div>
 </header>
+
 <div class="home" id="home">
   <div class="slider-for">
     <div class="slide-home">
@@ -128,25 +168,25 @@
 
 <div id="feature" class="feature">
   <div class="row">
-    <div class="col-lg-3 option wow fadeInUp" data-wow-offset="15" data-wow-delay="0.4s">
+    <div class="col-lg-3 col-sm-6 option wow fadeInUp" data-wow-offset="15" data-wow-delay="0.4s">
   <div>
     <a href="#"><img class="image-option" src="images/option-1.png"></a>
   </div>
   <p class="title-option">Different theme option</p>
 </div>
-<div class="col-lg-3 option wow fadeInUp" data-wow-offset="15" data-wow-delay="0.8s">
+<div class="col-lg-3 col-sm-6 option wow fadeInUp" data-wow-offset="15" data-wow-delay="0.8s">
   <div>
     <a href="#"><img class="image-option" src="images/option-2.png"></a>
   </div>
   <p class="title-option">fully customizable</p>
 </div>
-<div class="col-lg-3 option wow fadeInUp" data-wow-offset="15" data-wow-delay="1.2s">
+<div class="col-lg-3 col-sm-6 option wow fadeInUp" data-wow-offset="15" data-wow-delay="1.2s">
   <div>
     <a href="#"><img class="image-option" src="images/option-3.png"></a>
   </div>
   <p class="title-option">unlimited support</p>
 </div>
-<div class="col-lg-3 option wow fadeInUp" data-wow-offset="15" data-wow-delay="1.6s">
+<div class="col-lg-3 col-sm-6 option wow fadeInUp" data-wow-offset="15" data-wow-delay="1.6s">
   <div>
     <a href="#"><img class="image-option" src="images/option-4.png"></a>
   </div>
@@ -157,63 +197,63 @@
   <div class="content-feature container">
     <h3 class="title-feature wow fadeInLeft" data-wow-offset="50">Creative Amazing Features</h3>
     <div class="row">
-      <div class="col-lg-4 wow fadeInUp" data-wow-offset="20" data-wow-delay="0.4s">
+       <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-offset="20" data-wow-delay="0.4s">
   <div class="feature-icon">
     <a href="#"><img class="image-option" src="images/icon-feat-1.png"></a>
     <a href="#" class="feature-link">Retina Ready</a>
   </div>
   <p class="description-feature">All our modules are built with the possi bility to thse choose between different design and you change.</p>
 </div>
-<div class="col-lg-4 wow fadeInUp" data-wow-offset="20" data-wow-delay="0.4s">
+ <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-offset="20" data-wow-delay="0.4s">
   <div class="feature-icon">
     <a href="#"><img class="image-option" src="images/icon-feat-2.png"></a>
     <a href="#" class="feature-link">Creative Blog Style</a>
   </div>
   <p class="description-feature">All our modules are built with the possi bility to thse choose between different design and you change.</p>
 </div>
-<div class="col-lg-4 wow fadeInUp" data-wow-offset="20" data-wow-delay="0.4s">
+ <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-offset="20" data-wow-delay="0.4s">
   <div class="feature-icon">
     <a href="#"><img class="image-option" src="images/icon-feat-3.png"></a>
     <a href="#" class="feature-link">Icon Fonts</a>
   </div>
   <p class="description-feature">All our modules are built with the possi bility to thse choose between different design and you change.</p>
 </div>
-<div class="col-lg-4 wow fadeInUp" data-wow-offset="20" data-wow-delay="0.8s">
+ <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-offset="20" data-wow-delay="0.8s">
   <div class="feature-icon">
     <a href="#"><img class="image-option" src="images/icon-feat-4.png"></a>
     <a href="#" class="feature-link">Parallax Effects</a>
   </div>
   <p class="description-feature">All our modules are built with the possi bility to thse choose between different design and you change.</p>
 </div>
-<div class="col-lg-4 wow fadeInUp" data-wow-offset="20" data-wow-delay="0.8s">
+ <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-offset="20" data-wow-delay="0.8s">
   <div class="feature-icon">
     <a href="#"><img class="image-option" src="images/icon-feat-5.png"></a>
     <a href="#" class="feature-link">Amazing Interface</a>
   </div>
   <p class="description-feature">All our modules are built with the possi bility to thse choose between different design and you change.</p>
 </div>
-<div class="col-lg-4 wow fadeInUp" data-wow-offset="20" data-wow-delay="0.8s">
+ <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-offset="20" data-wow-delay="0.8s">
   <div class="feature-icon">
     <a href="#"><img class="image-option" src="images/icon-feat-6.png"></a>
     <a href="#" class="feature-link">SEO Optimized</a>
   </div>
   <p class="description-feature">All our modules are built with the possi bility to thse choose between different design and you change.</p>
 </div>
-<div class="col-lg-4 wow fadeInUp" data-wow-offset="20" data-wow-delay="1.2s">
+ <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-offset="20" data-wow-delay="1.2s">
   <div class="feature-icon">
     <a href="#"><img class="image-option" src="images/icon-feat-7.png"></a>
     <a href="#" class="feature-link">Creative Solutions</a>
   </div>
   <p class="description-feature">All our modules are built with the possi bility to thse choose between different design and you change.</p>
 </div>
-<div class="col-lg-4 wow fadeInUp" data-wow-offset="20" data-wow-delay="1.2s">
+ <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-offset="20" data-wow-delay="1.2s">
   <div class="feature-icon">
     <a href="#"><img class="image-option" src="images/icon-feat-8.png"></a>
     <a href="#" class="feature-link">Mega Menus</a>
   </div>
   <p class="description-feature">All our modules are built with the possi bility to thse choose between different design and you change.</p>
 </div>
-<div class="col-lg-4 wow fadeInUp" data-wow-offset="20" data-wow-delay="1.2s">
+ <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-offset="20" data-wow-delay="1.2s">
   <div class="feature-icon">
     <a href="#"><img class="image-option" src="images/icon-feat-9.png"></a>
     <a href="#" class="feature-link">Custom Backgrounds</a>
@@ -225,13 +265,13 @@
   </div>
 </div>
 
-<div class="about-company row">
-  <div class="col-lg-6">
+<div class="about-company row" id="about">
+  <div class="col-lg-6 col-sm-6">
     <img src="images/devices.png" alt="image progress" class="image-company wow fadeInLeft
 
 " data-wow-delay="0.5s">
   </div>
-  <div class="col-lg-6">
+  <div class="col-lg-6 col-sm-6">
     <h3 class="title-feature wow fadeInRight" data-wow-duration="5s">About Our Company</h3>
     <div class="wow fadeInRight" data-wow-delay="0.5s">
       <nav>
@@ -268,18 +308,18 @@
   </div>
 </div>
 
-<div class="work container">
+<div class="work container" id="work">
   <h3 class="title-feature wow fadeInDown" data-wow-duration="5s">Our Amazing Work</h3>
   <div class="row">
-    <ul class="nav-work">
-      <li class="nav-item wow fadeInLeft" data-wow-delay="1.5s" data-filter="all">All</li>
-      <li class="nav-item wow fadeInLeft" data-wow-delay="1.2s"  data-filter="1">Graphic Design</li>
-      <li class="nav-item wow fadeInLeft" data-wow-delay="0.9s" data-filter="2">Web Design</li>
-      <li class="nav-item wow fadeInLeft" data-wow-delay="0.6s" data-filter="3">Landing Pages</li>
-      <li class="nav-item wow fadeInLeft" data-wow-delay="0.3s" data-filter="4">Wordpress</li>
+    <ul class="nav-work col-sm-12">
+      <li class="nav-item wow fadeInLeft active col-sm-2" data-wow-delay="1.5s" data-filter="all">All</li>
+      <li class="nav-item wow fadeInLeft col-sm-2" data-wow-delay="1.2s"  data-filter="1">Graphic Design</li>
+      <li class="nav-item wow fadeInLeft col-sm-2" data-wow-delay="0.9s" data-filter="2">Web Design</li>
+      <li class="nav-item wow fadeInLeft col-sm-2" data-wow-delay="0.6s" data-filter="3">Landing Pages</li>
+      <li class="nav-item wow fadeInLeft col-sm-2" data-wow-delay="0.3s" data-filter="4">Wordpress</li>
     </ul>
   </div>
-  <div class="filter-container row wow fadeInUp" data-wow-delay="1s">
+  <div class="filter-container row wow fadeInUp" data-wow-delay="1.2s">
     <div class="filtr-item col-sm-3" data-category="1">
   <img src="images/img-1.jpg" alt="image1" class="image-work">
 </div><div class="filtr-item col-sm-3" data-category="2">
@@ -310,17 +350,17 @@
     <button type="button" class="btn"><i class="fa fa-plus"></i> load more</button>
   </div>
 </div>
-<div class="service">
+<div class="service" id="service">
   <p class="title-feature wow fadeInLeft">Our Services</p>
   <div class="wrap-service">
     <nav class="nav-service">
-      <div class="nav nav-tabs nav-service-link" id="nav-tab" role="tablist">
-        <a class="nav-item nav-link active wow fadeInRight" id="web-design-tab" data-toggle="tab" href="#web-design" role="tab" aria-controls="web-design" aria-selected="true">web design</a>
-        <a class="nav-item nav-link wow fadeInRight" data-wow-delay="0.4s" id="graphic-design-tab" data-toggle="tab" href="#graphic-design" role="tab" aria-controls="graphic-design" aria-selected="false">graphic design</a>
-        <a class="nav-item nav-link wow fadeInRight" data-wow-delay="0.6s" id="online-support-tab" data-toggle="tab" href="#online-support" role="tab" aria-controls="online-support" aria-selected="false">online support</a>
-        <a class="nav-item nav-link wow fadeInRight" data-wow-delay="0.8s" id="app-design-tab" data-toggle="tab" href="#app-design" role="tab" aria-controls="app-design" aria-selected="false">app design</a>
-        <a class="nav-item nav-link wow fadeInRight" data-wow-delay="1s" id="online-marketing-tab" data-toggle="tab" href="#online-marketing" role="tab" aria-controls="online-marketing" aria-selected="false">online marketing</a>
-        <a class="nav-item nav-link wow fadeInRight" data-wow-delay="1.2s" id="seo-service-tab" data-toggle="tab" href="#seo-service" role="tab" aria-controls="seo-service" aria-selected="false">seo service</a>
+      <div class="nav nav-tabs nav-service-link row" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active wow fadeInRight col-4" id="web-design-tab" data-toggle="tab" href="#web-design" role="tab" aria-controls="web-design" aria-selected="true">web design</a>
+        <a class="nav-item nav-link wow fadeInRight col-4" data-wow-delay="0.4s" id="graphic-design-tab" data-toggle="tab" href="#graphic-design" role="tab" aria-controls="graphic-design" aria-selected="false">graphic design</a>
+        <a class="nav-item nav-link wow fadeInRight col-4" data-wow-delay="0.6s" id="online-support-tab" data-toggle="tab" href="#online-support" role="tab" aria-controls="online-support" aria-selected="false">online support</a>
+        <a class="nav-item nav-link wow fadeInRight col-4" data-wow-delay="0.8s" id="app-design-tab" data-toggle="tab" href="#app-design" role="tab" aria-controls="app-design" aria-selected="false">app design</a>
+        <a class="nav-item nav-link wow fadeInRight col-4" data-wow-delay="1s" id="online-marketing-tab" data-toggle="tab" href="#online-marketing" role="tab" aria-controls="online-marketing" aria-selected="false">online marketing</a>
+        <a class="nav-item nav-link wow fadeInRight col-4" data-wow-delay="1.2s" id="seo-service-tab" data-toggle="tab" href="#seo-service" role="tab" aria-controls="seo-service" aria-selected="false">seo service</a>
       </div>
     </nav>
     <div class="tab-content container" id="nav-tabContent">
@@ -361,14 +401,15 @@
 <div class="purchase">
   <h3 class="title-purchase wow fadeInDown">Everything is ready. just buy and install now</h3>
   <p class="desc-purchase wow fadeInDown" data-wow-delay="0.4s">Smooth reliable, responsive ready, perfect portfolio, unique blog layout and many many options for you</p>
-  <button type="button" class="btn wow tada" data-wow-delay="0.5s">purchase now
-  </button>
+  <div class="btn-center">
+    <button type="button" class="btn btn-lg">purchase now</button>
+  </div>
 </div>
 
-<div class="breaking-new container">
+<div class="breaking-new container" id="blog">
   <h3 class="title-feature wow FadeInRight">Breaking News</h3>
   <div class="row">
-    <div class="col-sm-3 wow fadeInUp" data-wow-delay="0.4s">
+    <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
   <div class="content-breaking">
     <img src="images/img-1.jpg" alt="anh new" class="image">
     <div class="date">
@@ -384,7 +425,7 @@
       <p><a class="desc-link" href="#">2 comment</a></p>
     </div>
   </div>
-</div><div class="col-sm-3 wow fadeInUp" data-wow-delay="0.6s">
+</div><div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
   <div class="content-breaking">
     <img src="images/img-1.jpg" alt="anh new" class="image">
     <div class="date">
@@ -400,7 +441,7 @@
       <p><a class="desc-link" href="#">2 comment</a></p>
     </div>
   </div>
-</div><div class="col-sm-3 wow fadeInUp" data-wow-delay="0.8s">
+</div><div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
   <div class="content-breaking">
     <img src="images/img-1.jpg" alt="anh new" class="image">
     <div class="date">
@@ -416,7 +457,7 @@
       <p><a class="desc-link" href="#">2 comment</a></p>
     </div>
   </div>
-</div><div class="col-sm-3 wow fadeInUp" data-wow-delay="1.2s">
+</div><div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="1.2s">
   <div class="content-breaking">
     <img src="images/img-1.jpg" alt="anh new" class="image">
     <div class="date">
@@ -432,7 +473,7 @@
       <p><a class="desc-link" href="#">2 comment</a></p>
     </div>
   </div>
-</div><div class="col-sm-3 wow fadeInUp" data-wow-delay="1.4s">
+</div><div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="1.4s">
   <div class="content-breaking">
     <img src="images/img-1.jpg" alt="anh new" class="image">
     <div class="date">
@@ -448,7 +489,7 @@
       <p><a class="desc-link" href="#">2 comment</a></p>
     </div>
   </div>
-</div><div class="col-sm-3 wow fadeInUp" data-wow-delay="1.8s">
+</div><div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="1.8s">
   <div class="content-breaking">
     <img src="images/img-1.jpg" alt="anh new" class="image">
     <div class="date">
@@ -464,7 +505,7 @@
       <p><a class="desc-link" href="#">2 comment</a></p>
     </div>
   </div>
-</div><div class="col-sm-3 wow fadeInUp" data-wow-delay="2s">
+</div><div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="2s">
   <div class="content-breaking">
     <img src="images/img-1.jpg" alt="anh new" class="image">
     <div class="date">
@@ -480,7 +521,7 @@
       <p><a class="desc-link" href="#">2 comment</a></p>
     </div>
   </div>
-</div><div class="col-sm-3 wow fadeInUp" data-wow-delay="2.2s">
+</div><div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="2.2s">
   <div class="content-breaking">
     <img src="images/img-1.jpg" alt="anh new" class="image">
     <div class="date">
@@ -501,28 +542,28 @@
 </div>
 <div class="fun-fact">
   <div class="row">
-    <div class="col-lg-3 option wow fadeInUp" data-wow-delay="0.4s">
+    <div class="col-lg-3 col-sm-6 option wow fadeInUp" data-wow-delay="0.4s">
   <div>
     <a href="#"><img class="image-option" src="images/fact-1.png"></a>
   </div>
   <p class="number-fun">4609</p>
   <p class="title-option">Works</p>
 </div>
-<div class="col-lg-3 option wow fadeInUp" data-wow-delay="0.8s">
+<div class="col-lg-3 col-sm-6 option wow fadeInUp" data-wow-delay="0.8s">
   <div>
     <a href="#"><img class="image-option" src="images/fact-2.png"></a>
   </div>
   <p class="number-fun">3470</p>
   <p class="title-option">Customers</p>
 </div>
-<div class="col-lg-3 option wow fadeInUp" data-wow-delay="1.2s">
+<div class="col-lg-3 col-sm-6 option wow fadeInUp" data-wow-delay="1.2s">
   <div>
     <a href="#"><img class="image-option" src="images/fact-3.png"></a>
   </div>
   <p class="number-fun">2908</p>
   <p class="title-option">Purchase</p>
 </div>
-<div class="col-lg-3 option wow fadeInUp" data-wow-delay="1.6s">
+<div class="col-lg-3 col-sm-6 option wow fadeInUp" data-wow-delay="1.6s">
   <div>
     <a href="#"><img class="image-option" src="images/fact-4.png"></a>
   </div>
@@ -539,7 +580,7 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-sm-3 block-price wow fadeInLeft" data-wow-delay="0.4s">
+        <div class="col-md-3 col-sm-6 block-price wow fadeInLeft" data-wow-delay="0.4s">
   <h3 class="title-price">Personal</h3>
   <p class="price">$99<span class="price-month">/Month</span></p>
   <p class="offer">offer</p>
@@ -556,7 +597,7 @@
     <a href="#" class="link-buy">buy now</a>
   </div>
 </div>
-<div class="col-sm-3 block-price wow fadeInLeft" data-wow-delay="0.8s">
+<div class="col-md-3 col-sm-6 block-price wow fadeInLeft" data-wow-delay="0.8s">
   <h3 class="title-price">Business</h3>
   <p class="price">$199<span class="price-month">/Month</span></p>
   <p class="offer">offer</p>
@@ -573,7 +614,7 @@
     <a href="#" class="link-buy">buy now</a>
   </div>
 </div>
-<div class="col-sm-3 block-price wow fadeInLeft" data-wow-delay="1.2s">
+<div class="col-md-3 col-sm-6 block-price wow fadeInLeft" data-wow-delay="1.2s">
   <h3 class="title-price">Professional</h3>
   <p class="price">$299<span class="price-month">/Month</span></p>
   <p class="offer">offer</p>
@@ -590,7 +631,7 @@
     <a href="#" class="link-buy">buy now</a>
   </div>
 </div>
-<div class="col-sm-3 block-price wow fadeInLeft" data-wow-delay="1.6s">
+<div class="col-md-3 col-sm-6 block-price wow fadeInLeft" data-wow-delay="1.6s">
   <h3 class="title-price">diamond</h3>
   <p class="price">$299<span class="price-month">/Month</span></p>
   <p class="offer">offer</p>
@@ -612,7 +653,7 @@
     </div>
   </div>
 </div>
-<div class="feedback">
+<div class="feedback" id="testimonial">
   <h3 class="title-feature wow fadeInRight">What People Say About theHam</h3>
   <div class="feedback-slide">
     <div class="slide-feedback">
@@ -705,11 +746,11 @@
   </div>
 </div>
 
-<div class="team">
+<div class="team" id="team">
   <h3 class="title-feature">Meet Out Team</h3>
   <div class="container">
     <div class="team-container row">
-      <div class="col-sm-3 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="5s">
+      <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="5s">
   <div class="image-team">
     <img src="images/team-1.jpg" alt="team" class="item-team">
     <div class="team-plus">
@@ -727,7 +768,7 @@
     <a href="" class="icon-team"><i class="fa fa-vimeo-square"></i></a>
   </div>
 </div>
-<div class="col-sm-3 wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="5s">
+<div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.8s" data-wow-duration="5s">
   <div class="image-team">
     <img src="images/team-1.jpg" alt="team" class="item-team">
     <div class="team-plus">
@@ -745,7 +786,7 @@
     <a href="" class="icon-team"><i class="fa fa-vimeo-square"></i></a>
   </div>
 </div>
-<div class="col-sm-3 wow fadeInUp" data-wow-delay="1.2s" data-wow-duration="5s">
+<div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="1.2s" data-wow-duration="5s">
   <div class="image-team">
     <img src="images/team-1.jpg" alt="team" class="item-team">
     <div class="team-plus">
@@ -763,7 +804,7 @@
     <a href="" class="icon-team"><i class="fa fa-vimeo-square"></i></a>
   </div>
 </div>
-<div class="col-sm-3 wow fadeInUp" data-wow-delay="1.6s" data-wow-duration="5s">
+<div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="1.6s" data-wow-duration="5s">
   <div class="image-team">
     <img src="images/team-1.jpg" alt="team" class="item-team">
     <div class="team-plus">
@@ -785,7 +826,7 @@
     </div>
   </div>
 </div>
-<div class="purchase">
+<div class="purchase" id="skills">
   <div class="title-purchase-2">
     <h3 class="title-purchase wow fadeInLeft">theham is not only wordpress theme</h3>
     <h4 class="description-purchase wow fadeInRight">it’s also clean and creative design</h4>
@@ -808,11 +849,11 @@
     </div>
   </div>
 </div>
-<div class="contact row">
-  <div class="col-sm-6">
+<div class="contact row" id="contact">
+  <div class="col-md-6">
     <img src="images/map.jpg" alt="image-map" class="image-contact wow fadeInLeft" data-wow-delay="0.5s">
   </div>
-  <div class="col-sm-6 wow fadeInRight" data-wow-delay="0.5s">
+  <div class="col-md-6 wow fadeInRight" data-wow-delay="0.5s">
     <h3 class="title-feature">Keep In Touch</h3>
     <form action="/action_page.php">
       <input type="text" id="fname" name="name" placeholder="Name">
@@ -823,29 +864,12 @@
   </div>
 </div>
     <!-- include banner.html -->
-    <section class="banner-container">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p class="title-block">Banner</p>
-      </div>
-    </div>
-  </div>
-</section>
-
     <!-- include footer.html -->
-    <footer class="footer-container">
+<footer class="footer-container">
   <div class="footer-top container">
     <div class="row">
-      <div class="col-md-3 wow fadeInUp" data-wow-delay="0.5s">
-        <a href="#"><img src="images/logo.png" class="logo"></a>
-      </div>
-      <h3 class="col-md-4 title-footer wow fadeInUp" data-wow-delay="0.5s">recent post</h3>
-      <h3 class="col-md-3 title-footer wow fadeInUp" data-wow-delay="0.5s">tags</h3>
-      <h3 class="col-md-2 title-footer wow fadeInUp" data-wow-delay="0.5s">flicke feed</h3>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
+      <div class="col-lg-3 col-md-6">
+        <a href="#"><img src="images/logo.png" class="logo col-12 wow fadeInUp" data-wow-delay="0.5s"></a>
         <div class="address wow fadeInLeft" data-wow-delay="1s">
           <p class="wrap-footer">Lorem ipsum dolor sit amet, con is sectetur adipiscing elit. Duis ut lob ortis nulla. Vestibulum ante ipsum primis itrices posuere cubilia.</p>
           <div class="about">
@@ -860,7 +884,8 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-lg-4 col-md-6">
+        <h3 class="col-12 title-footer wow fadeInUp" data-wow-delay="0.5s">recent post</h3>
         <div class="recent wow fadeInUp" data-wow-delay="1.2s">
   <img src="images/img-footer.png">
   <div class="wrap-recent">
@@ -884,8 +909,9 @@
   </div>
 </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-lg-3 col-md-6">
         <div class="block-tags">
+          <h3 class="col-12 title-footer wow fadeInUp" data-wow-delay="0.5s">tags</h3>
           <nav class="tags wow fadeInUp" data-wow-delay="1.8s">
   <a href="#" class="tags-link">audio</a>
   <a href="#" class="tags-link">gallery</a>
@@ -911,13 +937,14 @@
             <input type="submit" value="Go">
           </form>
         </div>
-      <div class="col-md-2 wow fadeInUp" data-wow-delay="4s">
-        <img src="images/img-footer.png" class="image-flicke">
-        <img src="images/img-footer.png" class="image-flicke">
-        <img src="images/img-footer.png" class="image-flicke">
-        <img src="images/img-footer.png" class="image-flicke">
-        <img src="images/img-footer.png" class="image-flicke">
-        <img src="images/img-footer.png" class="image-flicke">
+      <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="4s">
+        <h3 class="col-12 title-footer wow fadeInUp" data-wow-delay="0.5s">flicke feed</h3>
+        <img src="images/img-footer.png" class="image-flicke col-sm-5 col-3">
+        <img src="images/img-footer.png" class="image-flicke col-sm-5 col-3">
+        <img src="images/img-footer.png" class="image-flicke col-sm-5 col-3">
+        <img src="images/img-footer.png" class="image-flicke col-sm-5 col-3">
+        <img src="images/img-footer.png" class="image-flicke col-sm-5 col-3">
+        <img src="images/img-footer.png" class="image-flicke col-sm-5 col-3">
       </div>
     </div>
   </div>
@@ -929,7 +956,7 @@
 
 
   <!-- include scripts.html -->
-  <!-- build:js(.) script/vendor.min.js -->
+<!-- build:js(.) script/vendor.min.js -->
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 <script type="text/javascript" src="node_modules/slick-carousel/slick/slick.js"></script>

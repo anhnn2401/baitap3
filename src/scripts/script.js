@@ -35,3 +35,9 @@ $('.feedback-nav').slick({
   nextArrow: '<i class="fa fa-angle-right"></i>'
 });
  new WOW().init();
+//btn-menu
+$('.fa-search').on('click', function(){
+  $('.form-control').toggleClass('open-search'),
+  $('.navbar-nav').toggleClass('close-menu')
+});
+$('body').scrollspy({ target: '.navbar-nav' });

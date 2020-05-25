@@ -1,15 +1,8 @@
 <footer class="footer-container">
   <div class="footer-top container">
     <div class="row">
-      <div class="col-md-3 wow fadeInUp" data-wow-delay="0.5s">
-        <a href="#"><img src="images/logo.png" class="logo"></a>
-      </div>
-      <h3 class="col-md-4 title-footer wow fadeInUp" data-wow-delay="0.5s">recent post</h3>
-      <h3 class="col-md-3 title-footer wow fadeInUp" data-wow-delay="0.5s">tags</h3>
-      <h3 class="col-md-2 title-footer wow fadeInUp" data-wow-delay="0.5s">flicke feed</h3>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
+      <div class="col-lg-3 col-md-6">
+        <a href="#"><img src="images/logo.png" class="logo col-12 wow fadeInUp" data-wow-delay="0.5s"></a>
         <div class="address wow fadeInLeft" data-wow-delay="1s">
           <p class="wrap-footer">Lorem ipsum dolor sit amet, con is sectetur adipiscing elit. Duis ut lob ortis nulla. Vestibulum ante ipsum primis itrices posuere cubilia.</p>
           <div class="about">
@@ -24,7 +17,8 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-lg-4 col-md-6">
+        <h3 class="col-12 title-footer wow fadeInUp" data-wow-delay="0.5s">recent post</h3>
         @@loop("../loop/loop-recent.html", [{
           "image": "images/img-footer.png",
           "title-recent": "A STANDARD IMAGE POST",
@@ -46,8 +40,9 @@
           }
         ])
       </div>
-      <div class="col-md-3">
+      <div class="col-lg-3 col-md-6">
         <div class="block-tags">
+          <h3 class="col-12 title-footer wow fadeInUp" data-wow-delay="0.5s">tags</h3>
           @@loop("../loop/loop-tags.html", [{
             "delay": "1.8s"
             },{
@@ -66,13 +61,14 @@
             <input type="submit" value="Go">
           </form>
         </div>
-      <div class="col-md-2 wow fadeInUp" data-wow-delay="4s">
-        <img src="images/img-footer.png" class="image-flicke">
-        <img src="images/img-footer.png" class="image-flicke">
-        <img src="images/img-footer.png" class="image-flicke">
-        <img src="images/img-footer.png" class="image-flicke">
-        <img src="images/img-footer.png" class="image-flicke">
-        <img src="images/img-footer.png" class="image-flicke">
+      <div class="col-lg-2 col-md-6 wow fadeInUp" data-wow-delay="4s">
+        <h3 class="col-12 title-footer wow fadeInUp" data-wow-delay="0.5s">flicke feed</h3>
+        <img src="images/img-footer.png" class="image-flicke col-sm-5 col-3">
+        <img src="images/img-footer.png" class="image-flicke col-sm-5 col-3">
+        <img src="images/img-footer.png" class="image-flicke col-sm-5 col-3">
+        <img src="images/img-footer.png" class="image-flicke col-sm-5 col-3">
+        <img src="images/img-footer.png" class="image-flicke col-sm-5 col-3">
+        <img src="images/img-footer.png" class="image-flicke col-sm-5 col-3">
       </div>
     </div>
   </div>

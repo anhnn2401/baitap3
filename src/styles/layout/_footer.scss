@@ -5,10 +5,10 @@
   font-size: 14px;
 }
 .footer-top {
-  margin-top: 120px;
+  margin-top: 90px;
   .logo {
     margin-bottom: 30px;
-    width: 80%;
+    width: 100%;
   }
   .title-footer {
     margin: 20px 0;
@@ -31,6 +31,9 @@
     padding-bottom: 25px;
     margin-bottom: 25px;
     border-bottom: 1px solid #294453;
+    @include breakpoint(1199) {
+      @include align-items(flex-start);
+    }
     &:last-child {
       padding-bottom: 0;
       border-bottom: 0;
@@ -72,6 +75,12 @@
         font-size: 14px;
         margin-right: 8px;
         color: #b8b8b8;
+        @include breakpoint(1199) {
+          display: inline-block;
+          margin-bottom: 10px;
+          padding: 5px;
+          margin-right: 5px;
+        }
         &:hover {
           background-color: #18cfab;
           color: #fff;
@@ -80,7 +89,7 @@
       }
     }
   }
-  .col-md-3 {
+  .col-lg-3 {
     .form-footer {
       margin-top: 16px;
       input[type=text] {
@@ -98,14 +107,20 @@
         padding: 8px;
         color: #fff;
         text-transform: uppercase;
+        @include breakpoint(767) {
+          display: inline-block;
+        }
         &:hover {
           color: #18cfab;
         }
       }
     }
   }
-  .col-md-2 {
+  .col-lg-2 {
     padding: 0;
+    .col-sm-5 {
+      padding: 0;
+    }
     .image-flicke {
       margin: 5px;
     }
