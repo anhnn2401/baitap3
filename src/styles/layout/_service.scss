@@ -46,8 +46,8 @@
     .tab-content {
       .active {
         @include flexbox();
-        align-items: center;
-        color: #777777;
+          align-items: center;
+          color: #777777;
         @include breakpoint(575) {
           display: block;
           .img-service {
