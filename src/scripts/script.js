@@ -37,6 +37,7 @@ $('.feedback-nav').slick({
  new WOW().init();
 //btn-menu
 $('.fa-search').on('click', function(){
-  $('.form-control').toggleClass('open-search')
+  $('.form-control').toggleClass('open-search'),
+  $('.navbar-nav').toggleClass('close-menu')
 });
 $('body').scrollspy({ target: '.navbar-nav' });

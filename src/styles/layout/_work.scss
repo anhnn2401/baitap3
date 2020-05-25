@@ -1,6 +1,10 @@
 .nav-work {
   @include flexbox();
   margin: 0 auto;
+  @include breakpoint(350) {
+    display: block;
+    float: left;
+  }
   .nav-item {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     padding: 25px;
@@ -8,22 +12,15 @@
     color: #717171;
     position: relative;
     border-top: 2px solid transparent;
-/*     &:before {
-      content: '';
-      width: 100%;
-      position: absolute;
-      border-top: 2px solid #18cfab;
-      top: 0;
-      left: 0;
-      visibility: hidden;
-    } */
+    cursor: pointer;
+    @include breakpoint(480) {
+      padding: 5px;
+      text-align: center;
+    }
     &:hover,
     &:active {
       color: #18cfab;
       border-color: #18cfab;
-      &:before {
-/*         visibility: visible; */
-      }
     }
   }
 }
@@ -34,21 +31,36 @@
     margin: 50px auto;
   }
   .filtr-item {
-    width: calc(100% / 4 - 20px) !important;
+    width: calc(100% / 4 - 5px) !important;
     .image-work {
       width: 100%;
     }
   }
-}
-.row {
-  .btn {
-    display: block;
-    margin: 0 auto;
-    text-transform: uppercase;
-    color: #fff;
-    background-color: #18cfab;
-    .fa-plus {
-      margin-right: 5px;
+  .row {
+    .col-sm-3 {
+      padding: 0;
+    }
+    .col-sm-12 {
+      @include breakpoint(480) {
+        display: block;
+        .col-sm-2 {
+          width: 50%;
+          float: left;
+          &:first-child {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .btn {
+      display: block;
+      margin: 0 auto;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: #18cfab;
+      .fa-plus {
+        margin-right: 5px;
+      }
     }
   }
 }

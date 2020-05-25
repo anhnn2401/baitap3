@@ -16,6 +16,7 @@
           border-radius: unset;
           padding: 20px;
           border: 0;
+          text-align: center;
           &:hover,
           &:active {
             color: #fff;
@@ -47,6 +48,14 @@
         @include flexbox();
         align-items: center;
         color: #777777;
+        @include breakpoint(575) {
+          display: block;
+          .img-service {
+            width: 100% !important;
+            margin-bottom: 20px;
+            margin-right: 0 !important;
+          }
+        }
         .img-service {
           width: 200px;
           height: 140px;

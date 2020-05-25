@@ -6,6 +6,12 @@
   z-index: 99;
   .navbar {
     padding: 0;
+    .logo {
+      width: 100%;
+      @include breakpoint(480) {
+        width: 50%;
+      }
+    }
     .navbar-collapse {
       .nav-pills {
         .nav-item {
@@ -33,6 +39,9 @@
           font-size: 15px;
           padding: 30px 10px;
         }
+      }
+      .close-menu {
+        display: none;
       }
     }
     .show {

@@ -10,6 +10,9 @@
   border-top: 2px solid #18cfab;
   background-color: #1c2a33;
   padding-bottom: 120px;
+  @include breakpoint(480) {
+    padding-bottom: 20px;
+  }
   &:nth-last-of-type(odd) {
     border-top: 2px solid #fff;
     padding-top: 20px;
@@ -24,6 +27,10 @@
     padding-bottom: 50px;
     padding-top: 90px;
     color: #18cfab;
+    @include breakpoint(575) {
+      padding-bottom: 15px;
+      padding-top: 30px;
+    }
   }
   .title-option {
     font-weight: 700;
@@ -36,13 +43,24 @@
   text-align: center;
   padding: 100px 0;
   position: relative;
+  @include breakpoint(575) {
+    padding: 60px 0;
+    font-size: 25px;
+    &:before {
+      top: 69% !important;
+    }
+  }
+  @include breakpoint(350) {
+    padding: 45px 0;
+    font-size: 20px;
+  }
   &:before {
     content: '';
     background-color: #18cfab;
     width: 75px;
     position: absolute;
     height: 1px;
-    top: 172px;
+    top: 64%;
     left: 47%;
   }
   &:after {
@@ -51,7 +69,7 @@
     width: 75px;
     position: absolute;
     height: 1px;
-    top: 176px;
+    top: 66%;
     left: 48%;
   }
 }

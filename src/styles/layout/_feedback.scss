@@ -3,6 +3,10 @@
   position: relative;
   .title-feature {
     color: #fff;
+    @include breakpoint(767) {
+      padding: 60px 0;
+      font-size: 20px;
+    }
   }
   .slide-feedback {
     text-align: center;
@@ -18,6 +22,10 @@
       color: #fff;
       margin: 45px auto;
       font-size: 16px;
+      @include breakpoint(767) {
+        width: 90%;
+        margin: 20px auto;
+      }
     }
     .name-feedback {
       color: #18cfab;
@@ -41,6 +49,9 @@
     left: 50%;
     @include transform(translateX(-50%));
     padding-bottom: 30px;
+    @include breakpoint(580) {
+      display: none;
+    }
     .image-nav {
       border-radius: 50%;
     }
@@ -80,6 +91,9 @@
           top: -25px;
           border: 2px solid rgba(31, 218, 181, 0.2);
           border-radius: 100%;
+          @include breakpoint(767) {
+            top: -10px;
+          }
         }
       }
     }
