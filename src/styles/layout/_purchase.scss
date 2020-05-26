@@ -22,7 +22,7 @@
     margin-bottom: 75px;
   }
   .btn-center {
-    margin-bottom: 25px;
+    margin-bottom: 125px;
     .btn-lg {
       margin: 0 auto;
       display: block;
@@ -34,6 +34,10 @@
       padding: 25px 30px;
       border-top: 5px solid #fff;
       font-weight: 700;
+      @include breakpoint(480) {
+        font-size: 13px;
+        padding: 15px 20px;
+      }
       &:hover {
         background-color: #18cfab;
       }
@@ -66,14 +70,22 @@
         font-size: 14px;
         color: #fff;
         margin-bottom: 10px;
+        @include breakpoint(575) {
+          margin-left: 25%;
+        }
         .fa-check-circle {
           color: #18cfab;
           margin-right: 20px;
         }
       }
       .image-purchase {
-        margin-bottom: 40px;
-        width: 100%;
+        width: 115%;
+        position: absolute;
+        left: 0;
+        bottom: 5%;
+        @include breakpoint(575) {
+          display: none;
+        }
       }
       .btn {
         float: left;
@@ -87,11 +99,14 @@
         padding: 25px 30px;
         border-top: 5px solid #fff;
         font-weight: 700;
-        margin-bottom: 10px;
-        @include breakpoint(767) {
+        margin-bottom: 200px;
+        @include breakpoint(991) {
+          margin-bottom: 100px;
+        }
+        @include breakpoint(575) {
           float: unset;
-          margin: 10px auto;
           display: block;
+          margin: 70px auto;
         }
         &:hover {
           background-color: #18cfab;

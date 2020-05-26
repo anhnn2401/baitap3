@@ -20,7 +20,7 @@
 <meta property="og:type" content="">
 <meta property="og:url" content="" />
 <!-- Google Font -->
-<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- include styles.html -->
 <!-- build:css(.) style/vendor.min.css -->
@@ -73,12 +73,15 @@
             <li class="nav-item">
               <a class="nav-link" href="#contact">contact</a>
             </li>
+            <li class="nav-item">
+              <button class="toggle-search"><i class="fa fa-search icon-search"></i></button>
+            </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
+        </div>
+        <form class="search-form">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn my-2 my-sm-0" type="submit"><i class="fa fa-search icon-search"></i></button>
           </form>
-        </div>
       </nav>
   </div>
 </header>
@@ -266,12 +269,12 @@
 </div>
 
 <div class="about-company row" id="about">
-  <div class="col-lg-6 col-sm-6">
+  <div class="col-lg-6 col-sm-12">
     <img src="images/devices.png" alt="image progress" class="image-company wow fadeInLeft
 
 " data-wow-delay="0.5s">
   </div>
-  <div class="col-lg-6 col-sm-6">
+  <div class="col-lg-6 col-sm-12">
     <h3 class="title-feature wow fadeInRight" data-wow-duration="5s">About Our Company</h3>
     <div class="wow fadeInRight" data-wow-delay="0.5s">
       <nav>
@@ -312,11 +315,11 @@
   <h3 class="title-feature wow fadeInDown" data-wow-duration="5s">Our Amazing Work</h3>
   <div class="row">
     <ul class="nav-work col-sm-12">
-      <li class="nav-item wow fadeInLeft active col-sm-2" data-wow-delay="1.5s" data-filter="all">All</li>
-      <li class="nav-item wow fadeInLeft col-sm-2" data-wow-delay="1.2s"  data-filter="1">Graphic Design</li>
-      <li class="nav-item wow fadeInLeft col-sm-2" data-wow-delay="0.9s" data-filter="2">Web Design</li>
-      <li class="nav-item wow fadeInLeft col-sm-2" data-wow-delay="0.6s" data-filter="3">Landing Pages</li>
-      <li class="nav-item wow fadeInLeft col-sm-2" data-wow-delay="0.3s" data-filter="4">Wordpress</li>
+      <li class="nav-item wow fadeInLeft active col-md-2" data-wow-delay="1.5s" data-filter="all">All</li>
+      <li class="nav-item wow fadeInLeft col-md-2" data-wow-delay="1.2s"  data-filter="1">Graphic Design</li>
+      <li class="nav-item wow fadeInLeft col-md-2" data-wow-delay="0.9s" data-filter="2">Web Design</li>
+      <li class="nav-item wow fadeInLeft col-md-2" data-wow-delay="0.6s" data-filter="3">Landing Pages</li>
+      <li class="nav-item wow fadeInLeft col-md-2" data-wow-delay="0.3s" data-filter="4">Wordpress</li>
     </ul>
   </div>
   <div class="filter-container row wow fadeInUp" data-wow-delay="1.2s">
@@ -355,12 +358,12 @@
   <div class="wrap-service">
     <nav class="nav-service">
       <div class="nav nav-tabs nav-service-link row" id="nav-tab" role="tablist">
-        <a class="nav-item nav-link active wow fadeInRight col-4" id="web-design-tab" data-toggle="tab" href="#web-design" role="tab" aria-controls="web-design" aria-selected="true">web design</a>
-        <a class="nav-item nav-link wow fadeInRight col-4" data-wow-delay="0.4s" id="graphic-design-tab" data-toggle="tab" href="#graphic-design" role="tab" aria-controls="graphic-design" aria-selected="false">graphic design</a>
-        <a class="nav-item nav-link wow fadeInRight col-4" data-wow-delay="0.6s" id="online-support-tab" data-toggle="tab" href="#online-support" role="tab" aria-controls="online-support" aria-selected="false">online support</a>
-        <a class="nav-item nav-link wow fadeInRight col-4" data-wow-delay="0.8s" id="app-design-tab" data-toggle="tab" href="#app-design" role="tab" aria-controls="app-design" aria-selected="false">app design</a>
-        <a class="nav-item nav-link wow fadeInRight col-4" data-wow-delay="1s" id="online-marketing-tab" data-toggle="tab" href="#online-marketing" role="tab" aria-controls="online-marketing" aria-selected="false">online marketing</a>
-        <a class="nav-item nav-link wow fadeInRight col-4" data-wow-delay="1.2s" id="seo-service-tab" data-toggle="tab" href="#seo-service" role="tab" aria-controls="seo-service" aria-selected="false">seo service</a>
+        <a class="nav-item nav-link active wow fadeInRight" id="web-design-tab" data-toggle="tab" href="#web-design" role="tab" aria-controls="web-design" aria-selected="true">web design</a>
+        <a class="nav-item nav-link wow fadeInRight" data-wow-delay="0.4s" id="graphic-design-tab" data-toggle="tab" href="#graphic-design" role="tab" aria-controls="graphic-design" aria-selected="false">graphic design</a>
+        <a class="nav-item nav-link wow fadeInRight" data-wow-delay="0.6s" id="online-support-tab" data-toggle="tab" href="#online-support" role="tab" aria-controls="online-support" aria-selected="false">online support</a>
+        <a class="nav-item nav-link wow fadeInRight" data-wow-delay="0.8s" id="app-design-tab" data-toggle="tab" href="#app-design" role="tab" aria-controls="app-design" aria-selected="false">app design</a>
+        <a class="nav-item nav-link wow fadeInRight" data-wow-delay="1s" id="online-marketing-tab" data-toggle="tab" href="#online-marketing" role="tab" aria-controls="online-marketing" aria-selected="false">online marketing</a>
+        <a class="nav-item nav-link wow fadeInRight" data-wow-delay="1.2s" id="seo-service-tab" data-toggle="tab" href="#seo-service" role="tab" aria-controls="seo-service" aria-selected="false">seo service</a>
       </div>
     </nav>
     <div class="tab-content container" id="nav-tabContent">
@@ -421,7 +424,7 @@
     <h3><a class="title-post" href="">Amazing Image Post</a></h3>
     <div class="desc-post">
       <p><a class="desc-link" href="#">By admin</a></p>
-      <p>|</p>
+      <p class="desc-link">|</p>
       <p><a class="desc-link" href="#">2 comment</a></p>
     </div>
   </div>
@@ -437,7 +440,7 @@
     <h3><a class="title-post" href="">Amazing Blog Post</a></h3>
     <div class="desc-post">
       <p><a class="desc-link" href="#">By admin</a></p>
-      <p>|</p>
+      <p class="desc-link">|</p>
       <p><a class="desc-link" href="#">2 comment</a></p>
     </div>
   </div>
@@ -453,7 +456,7 @@
     <h3><a class="title-post" href="">Amazing Blog Post</a></h3>
     <div class="desc-post">
       <p><a class="desc-link" href="#">By admin</a></p>
-      <p>|</p>
+      <p class="desc-link">|</p>
       <p><a class="desc-link" href="#">2 comment</a></p>
     </div>
   </div>
@@ -469,7 +472,7 @@
     <h3><a class="title-post" href="">Amazing Blog Post</a></h3>
     <div class="desc-post">
       <p><a class="desc-link" href="#">By admin</a></p>
-      <p>|</p>
+      <p class="desc-link">|</p>
       <p><a class="desc-link" href="#">2 comment</a></p>
     </div>
   </div>
@@ -485,7 +488,7 @@
     <h3><a class="title-post" href="">Amazing Image Post</a></h3>
     <div class="desc-post">
       <p><a class="desc-link" href="#">By admin</a></p>
-      <p>|</p>
+      <p class="desc-link">|</p>
       <p><a class="desc-link" href="#">2 comment</a></p>
     </div>
   </div>
@@ -501,7 +504,7 @@
     <h3><a class="title-post" href="">Amazing Image Post</a></h3>
     <div class="desc-post">
       <p><a class="desc-link" href="#">By admin</a></p>
-      <p>|</p>
+      <p class="desc-link">|</p>
       <p><a class="desc-link" href="#">2 comment</a></p>
     </div>
   </div>
@@ -517,7 +520,7 @@
     <h3><a class="title-post" href="">Amazing Image Post</a></h3>
     <div class="desc-post">
       <p><a class="desc-link" href="#">By admin</a></p>
-      <p>|</p>
+      <p class="desc-link">|</p>
       <p><a class="desc-link" href="#">2 comment</a></p>
     </div>
   </div>
@@ -533,7 +536,7 @@
     <h3><a class="title-post" href="">Amazing Image Post</a></h3>
     <div class="desc-post">
       <p><a class="desc-link" href="#">By admin</a></p>
-      <p>|</p>
+      <p class="desc-link">|</p>
       <p><a class="desc-link" href="#">2 comment</a></p>
     </div>
   </div>
@@ -737,12 +740,24 @@
 
   </div>
   <div class="feedback-nav">
-    <img src="images/feedback.png" alt="feedback" class="image-nav">
-    <img src="images/feedback.png" alt="feedback" class="image-nav">
-    <img src="images/feedback.png" alt="feedback" class="image-nav">
-    <img src="images/feedback.png" alt="feedback" class="image-nav">
-    <img src="images/feedback.png" alt="feedback" class="image-nav">
-    <img src="images/feedback.png" alt="feedback" class="image-nav">
+    <div class="div-image">
+      <img src="images/img-2.jpg" alt="feedback" class="image-nav">
+    </div>
+    <div class="div-image">
+      <img src="images/feedback.png" alt="feedback" class="image-nav">
+    </div>
+    <div class="div-image">
+      <img src="images/img-3.jpg" alt="feedback" class="image-nav">
+    </div>
+    <div class="div-image">
+      <img src="images/img-1.jpg" alt="feedback" class="image-nav">
+    </div>
+    <div class="div-image">
+      <img src="images/img-1.jpg" alt="feedback" class="image-nav">
+    </div>
+    <div class="div-image">
+      <img src="images/feedback.png" alt="feedback" class="image-nav">
+    </div>
   </div>
 </div>
 
@@ -855,7 +870,7 @@
   </div>
   <div class="col-md-6 wow fadeInRight" data-wow-delay="0.5s">
     <h3 class="title-feature">Keep In Touch</h3>
-    <form action="/action_page.php">
+    <form action="/action_page.php" class="contact-form">
       <input type="text" id="fname" name="name" placeholder="Name">
       <input type="text" id="lname" name="email" placeholder="Email">
       <textarea type="text" name="Messager" placeholder="Messager"></textarea>

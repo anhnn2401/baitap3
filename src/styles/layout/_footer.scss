@@ -11,11 +11,12 @@
     width: 100%;
   }
   .title-footer {
-    margin: 20px 0;
+    margin: 30px 0;
     font-size: 18px;
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
+    margin-bottom: 60px;
   }
   .about {
     margin-top: 40px;
@@ -27,7 +28,7 @@
   }
   .recent {
     @include flexbox();
-    @include align-items(center);
+    @include align-items(start);
     padding-bottom: 25px;
     margin-bottom: 25px;
     border-bottom: 1px solid #294453;
@@ -39,22 +40,18 @@
       border-bottom: 0;
       margin-bottom: 30px;
     }
-    &:hover {
-      .wrap-recent {
-        .title-recent {
-          color: #18cfab;
-        }
-      }
-    }
     .wrap-recent {
       margin-left: 15px;
       .title-recent {
         color: #fff;
         font-size: 16px;
         font-weight: 700;
+        &:hover {
+          color: #18cfab;
+        }
       }
       .desc-recent {
-        margin: 8px 0;
+        margin: 10px 0;
       }
       .date-recent {
         color: #f1f1f1;
@@ -65,15 +62,16 @@
   }
   .block-tags {
     padding-bottom: 25px;
-    border-bottom: 1px solid #e3e3e3;
+    border-bottom: 1px solid #294453;
     margin-top: 16px;
     .tags {
-      margin-bottom: 25px;
+      margin-bottom: 10px;
       .tags-link {
+        display: inline-block;
         border: 1px solid #e3e3e3;
-        padding: 8px;
+        padding: 5px 10px;
         font-size: 14px;
-        margin-right: 8px;
+        margin-right: 5px;
         color: #b8b8b8;
         @include breakpoint(1199) {
           display: inline-block;
@@ -92,6 +90,7 @@
   .col-lg-3 {
     .form-footer {
       margin-top: 16px;
+      @include flexbox();
       input[type=text] {
         background-color: #22353f;
         font-size: 16px;
@@ -122,13 +121,12 @@
       padding: 0;
     }
     .image-flicke {
-      margin: 5px;
+      margin: 0 5px 10px 0;
     }
   }
 }
 .footer-bot {
   background-color: #22353f;
-  border: 1px solid #fff;
   .footer-content {
     font-size: 16px;
     line-height: 5;

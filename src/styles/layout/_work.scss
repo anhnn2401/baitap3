@@ -1,7 +1,7 @@
 .nav-work {
   @include flexbox();
   margin: 0 auto;
-  @include breakpoint(350) {
+  @include breakpoint(575) {
     display: block;
     float: left;
   }
@@ -13,9 +13,9 @@
     position: relative;
     border-top: 2px solid transparent;
     cursor: pointer;
-    @include breakpoint(480) {
+    text-align: center;
+    @include breakpoint(575) {
       padding: 5px;
-      text-align: center;
     }
     &:hover,
     &:active {

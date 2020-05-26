@@ -1,5 +1,5 @@
 .btn-home {
-  margin-bottom: 240px;
+  margin-bottom: 140px;
   @include breakpoint(1200) {
     margin-bottom: 50px;
   }
@@ -43,7 +43,7 @@
   .slider-nav {
     width: 170px;
     position: absolute;
-    bottom: 215px;
+    bottom: 115px;
     right: 100px;
     @include breakpoint(1200) {
       top: 65%;

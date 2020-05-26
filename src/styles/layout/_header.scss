@@ -29,6 +29,25 @@
             border-bottom: 3px solid #18cfab;
             color: #18cfab;
           }
+          .toggle-search {
+            top: 50%;
+            position: absolute;
+            @include transform(translateY(-50%));
+            border: none;
+            background-color: transparent;
+            color: #fff;
+            @include breakpoint(991) {
+              top: 9%;
+              right: 9%;
+            }
+            @include breakpoint(480) {
+              top: 6%;
+            }
+            &:hover {
+              color: #18cfab;
+              cursor: pointer;
+            }
+          }
         }
       }
       .navbar-nav {
@@ -53,15 +72,30 @@
       }
     }
   }
-  .my-2 {
-    .btn {
-      color: #b8b8b8;
-    }
-    .form-control {
-      display: none;
-    }
-    .open-search {
-      display: block;
-    }
+}
+.navbar-light button.navbar-toggler span.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.search-form {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  @include transition(all .3s);
+  padding-top: 20px;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    padding-top: 0;
+  }
+  .btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    @include transform(translateY(-50%));
   }
 }
