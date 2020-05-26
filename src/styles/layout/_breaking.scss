@@ -9,11 +9,6 @@
           .date {
             background-color: #18cfab;
           }
-          & ~ .title-desc {
-            .title-post {
-              color: #18cfab;
-            }
-          }
         }
         .image {
           width: 100%;
@@ -31,19 +26,23 @@
       .title-desc {
         background-color: #f8fcfe;
         border: 1px solid #f8fcfe;
-        text-align: center;
+        padding-left: 20px;
         .title-post {
           font-size: 18px;
           font-weight: 700;
           color: #717171;
+          &:hover,
+          &:active {
+            color: #18cfab;
+          }
         }
         .desc-post {
           text-align: center;
           font-size: 14px;
           @include flexbox;
-          @include justify-content(space-around);
           .desc-link {
             color: #717171;
+            padding-right: 10px;
           }
         }
       }

@@ -9,6 +9,7 @@
       &:hover {
         .team-plus {
           height: 100%;
+          opacity: 1;
         }
       }
       .item-team {
@@ -19,22 +20,23 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: #008cba;
+        background-color: rgba(46, 74, 91, 0.5);;
         overflow: hidden;
         width: 100%;
         height: 0;
+        opacity: 0;
         @include transition(all 0.5s);
       }
     }
     .fa-plus {
-      font-size: 45px;
+      font-size: 25px;
       color: #18cfab;
       position: absolute;
       top: 50%;
       left: 50%;
       @include transform(translate(-50%, -50%));
       &:before {
-        padding: 30px 35px;
+        padding: 20px 25px;
         border-radius: 100%;
         border: 1px solid #fff;
         background-color: #fff;
@@ -44,23 +46,29 @@
         background-color: transparent;
         border: 1px solid #18cfab;
         border-radius: 100%;
-        width: 115%;
-        height: 270%;
+        width: 114%;
+        height: 310%;
         position: absolute;
-        left: -8%;
-        top: -85%;
+        left: -7%;
+        top: -105%;
       }
     }
     .name-team {
-      background-color: #18cfab;
+      background-color: #2e4a5b;
       padding: 20px;
+      &:hover {
+          background-color: #18cfab;
+        .position-name {
+          color: #fff;
+        }
+      }
       .name-user {
         color: #fff;
         font-size: 16px;
         font-weight: 700;
       }
       .position-name {
-        color: #2e4a5b;
+        color: #18cfab;
         font-size: 13px;
       }
     }
@@ -71,11 +79,15 @@
         @include flexbox();
         @include justify-content(center);
         font-size: 30px;
-        background-color: #18cfab;
+        background-color: #2e4a5b;
         width: 100%;
         padding: 15px;
         color: #fff;
         border: 1px solid #fff;
+        &:hover,
+        &:active {
+          background-color: #18cfab;
+        }
         @include breakpoint(1199) {
           padding: 5%;
           margin-bottom: 10px;

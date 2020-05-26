@@ -2,6 +2,7 @@
   width: 100%;
   font-family: Montserrat;
   background-color: #1c2a33;
+  position: relative;
   @include breakpoint (991) {
     overflow: auto;
   }
@@ -11,12 +12,26 @@
       position: absolute;
       bottom: 0;
       padding-right: 60px;
+      @include breakpoint(991) {
+        position: relative;
+        margin: 0;
+      }
     }
     .title-feature {
       text-align: left;
       color: #fff;
       @include breakpoint(991) {
         padding: 70px 0;
+        text-align: center;
+        &:before {
+          left: 50% !important;
+        }
+        &:after {
+          left: 52% !important;
+        }
+      }
+      @include breakpoint(480) {
+        padding: 25px 0;
       }
       &:before {
         left: 20%;
@@ -29,6 +44,10 @@
       text-transform: uppercase;
       background-color: transparent;
       border-bottom: none;
+      @include breakpoint(991) {
+        @include flexbox();
+        @include justify-content(center);
+      }
       .nav-link {
         font-size: 16px;
         font-weight: 700;
@@ -37,6 +56,9 @@
         margin-right: 20px;
         border: 0;
         position: relative;
+        @include breakpoint(480) {
+          font-size: 10px;
+        }
         &:after {
           content: '';
           width: 100%;
@@ -69,6 +91,10 @@
   margin-bottom: 95px;
   @include breakpoint(991) {
     margin-bottom: 30px;
+    .progress {
+      width: 95% !important;
+      margin: 20px !important;
+    }
   }
   .progress {
     margin: 10px 0;
@@ -78,9 +104,6 @@
     height: auto;
     z-index: 1;
     border-radius: 5px;
-    @include breakpoint(480) {
-      width: 100%;
-    }
     &:before {
       content: '';
       background-color: #aaa;

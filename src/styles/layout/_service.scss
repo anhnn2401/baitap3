@@ -11,17 +11,18 @@
         background-color: #f8fcfe;
         .nav-link {
           color: #717171;
-          margin: 0;
-          box-shadow: 1px 1px 1px 1px rgba(0,0,0,.1);
+          border: 1px solid #e3e3e3;
+          text-align: center;
           border-radius: unset;
           padding: 20px;
-          border: 0;
-          text-align: center;
+          @include breakpoint(991) {
+            display: block;
+            width: 33.3333%;
+          }
           &:hover,
           &:active {
             color: #fff;
             background-color: #18cfab;
-            border: 0;
           }
         }
         .active {

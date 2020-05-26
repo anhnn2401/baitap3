@@ -2,10 +2,11 @@
   .col-md-6 {
     .image-contact {
       width: 100%;
+      margin-top: 75px;
     }
     .title-feature {
       text-align: left;
-      padding: 70px 0;
+      padding: 65px 0;
       display: block;
       float: left;
       &:before {
@@ -19,51 +20,54 @@
     }
   }
 }
-textarea {
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  width:80%;
-  height: 150px;
-  resize: none;
-  text-align:left;
-  font-family: Arial;
-  @include breakpoint(767) {
-    width: 100%;
+.contact-form {
+  margin-bottom: 120px;
+  textarea {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width:80%;
+    height: 130px;
+    resize: none;
+    text-align:left;
+    font-family: Arial;
+    @include breakpoint(767) {
+      width: 100%;
+    }
   }
-}
-input[type=text] {
-  width: 80%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  text-align: left;
-  @include breakpoint(767) {
-    width: 100%;
+  input[type=text] {
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left;
+    @include breakpoint(767) {
+      width: 100%;
+    }
   }
-}
 
-input[type=submit] {
-  width: 80%;
-  background-color: #00cbf6;
-  color: #ffffff;
-  padding: 15px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  text-transform: uppercase;
-  @include breakpoint (767) {
-    display: block;
-    margin: 20px auto;
+  input[type=submit] {
+    width: 80%;
+    background-color: #00cbf6;
+    color: #ffffff;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    @include breakpoint (767) {
+      display: block;
+      margin: 20px auto;
+    }
   }
-}
 
-input[type=submit]:hover {
-  background-color: #18cfab;
+  input[type=submit]:hover {
+    background-color: #18cfab;
+  }
 }

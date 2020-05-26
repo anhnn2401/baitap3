@@ -21,13 +21,14 @@
       }
       .number-fun {
         color: #fff;
+        font-size: 36px;
       }
       .image-option {
         padding-top: 60px;
         padding-bottom: 25px;
       }
       .title-option {
-        margin-top: 25px;
+        text-transform: none;
       }
     }
   }
@@ -35,7 +36,7 @@
     .container {
       .block-price {
         background-color: #f8fcfe;
-        box-shadow: 0 0 1px 1px;
+        box-shadow: 0 0 1px 1px #ececec;
         padding: 0;
         border-radius: 5px;
         position: relative;
@@ -47,7 +48,7 @@
           }
         }
         &:hover {
-          box-shadow: 0 0 2px 2px #000;
+          box-shadow: 0 0 4px 4px #e1e1e1;
           z-index: 1;
           .offer {
             background-color: #18cfab;
@@ -106,7 +107,7 @@
           text-align: center;
           .item-price {
             padding: 10px 0;
-            box-shadow: 0 0 0 1px;
+            border: 1px solid #ececec;
           }
         }
         .d-flex {
